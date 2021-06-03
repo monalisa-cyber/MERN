@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .header {
+                         padding: 10px 16px;
+                         background: #555;
+                         color: #f1f1f1;
+                    }
+             .footer {
+                         position: fixed;
+                         left: 70px;
+                         bottom: 30px;
+                         right: 10px; 
+                         width: 85%;
+                         background-color: gray;
+                         color: white;
+                         text-align: center;
+                    }
+            .container{
+                         position: fixed;
+                         left: 450px;
+                         top:120px;
+            }
+        </style>
+    </head>
+    <body style="background-color:cadetblue;">
+        <center>
+       <div class="header" ><header> <marquee width = "50%" style = "font-family:arial; fornt-size:80px;color:black;">Product Details</marquee></header></div>     
+       <div class="container">
+       <form>
+             
+            <div>
+                <label>Product Name</label>
+                <input type="text" name="productname" required minlength="4" maxlength="100">
+            </div>
+            
+            
+            <div>
+                <label>Product Description</label>
+                <input type="text" name="productdescription" required>
+            </div>
+        
+            
+            <div>
+                <label>Support Email</label>
+                <input type="text" name="email" required>
+            </div>
+            
+        
+            <div>
+                <label>Seller Contact</label>
+                <input type="text" name="contact"  value="456678899" readonly>
+            </div>
+            
+            
+            <div>
+                <label>Launch Date</label>
+                <input type="Date" name="date" required>
+            </div>
+            
+            
+            <div>
+                <label>Product Colours</label>
+                <input type="checkbox" name="product1" >Red
+                <input type="checkbox" name="product2" >Green
+                <input type="checkbox" name="product3" >Yellow
+            </div>
+            
+            
+            <div>
+                <label>Product Size</label>
+                <select name="size" required>
+                    <option value="default">select</option>
+                    <option value="SM">SM</option>
+                    <option value="MD">MD</option>
+                    <option value="LG">LG</option>
+                    <option value="XL">XL</option>
+                </select>
+            </div>
+            <div>
+                <label>Product Image</label>
+                <input type="file"  name="Pimage">
+            </div>
+            
+            <div>
+                <label>In Stock</label>
+                <input type="radio" name="stock" >yes
+                <input type="radio" name="stock">no
+            </div>
+            
+            <div>
+                <input type="submit">
+                <input type="reset">
+            </div>
+            </table>
+        </form>
+        </div>
+        </center>
+     
+        <div class="footer">
+            @Copyright 2021. 
+        </div>
+        
+    </body>
+</html>
